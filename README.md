@@ -1,4 +1,16 @@
+# A Docker configuration for sen2cor
 
+## Example
+For a brief example, you first need to download a Sentinel 2 level 1C granule in the SAFE format, and place this unzipped in the `data/example` directory.
+
+Next run the Docker process with:
+```shell
+docker-compose run sen2cor \
+    L2A_Process /data/example/S2B_MSIL1C_20190331T000239_N0207_R030_T55GEN_20190331T005814.SAFE \
+        --resolution 20
+```
+
+If you would like more examples, please raise an issue!
 
 
 ## Notes
