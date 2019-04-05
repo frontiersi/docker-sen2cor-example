@@ -1,0 +1,6 @@
+version: "3.4"
+services:
+  sen2cor:
+    build: .
+    volumes:
+      - ./data:/data
